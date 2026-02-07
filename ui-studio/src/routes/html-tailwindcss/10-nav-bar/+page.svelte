@@ -1,9 +1,6 @@
-<svelte:head><link rel="icon" href={favicon} /></svelte:head>
-<svelte:window on:click={handleClickOutside} />
-
 <script lang="ts">
-  import favicon from "$lib/assets/svelte_logo.svg";
-  import "./page.css";
+  import favicon from "$lib/svg/svelte_logo.svg";
+  import "$lib/css/default.css"
 
   let isDropdownOpen = false;
   
@@ -20,9 +17,18 @@
   }
 </script>
 
+<svelte:head>
+  <link rel="icon" href={favicon} />
+</svelte:head>
+
+<svelte:window on:click={handleClickOutside} />
+
 <style>
-  @reference "./page.css";
+  @reference "$lib/css/default.css";
 </style>
+
+<!---------------------------------------------------------------------------->
+
 
 <!---------------------------------------------------------------------------->
 

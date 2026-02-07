@@ -1,9 +1,11 @@
 <script lang="ts">
-  import favicon from "$lib/assets/svelte_logo.svg";
-  import "./page.css";
+  import favicon from "$lib/svg/svelte_logo.svg";
+  import "$lib/css/default.css"
 </script>
 
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
+
+<!---------------------------------------------------------------------------->
 
 <!--
   `size` allows you to set the height and width of an element at the same

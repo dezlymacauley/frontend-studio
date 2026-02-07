@@ -1,12 +1,14 @@
-<svelte:head><link rel="icon" href={favicon} /></svelte:head>
-
 <script lang="ts">
-  import favicon from "$lib/assets/svelte_logo.svg";
-  import "./page.css";
+  import favicon from "$lib/svg/svelte_logo.svg";
+  import "$lib/css/default.css"
 </script>
 
+<svelte:head>
+  <link rel="icon" href={favicon} />
+</svelte:head>
+
 <style>
-  @reference "./page.css";
+  @reference "$lib/css/default.css";
 </style>
 
 <!---------------------------------------------------------------------------->
@@ -35,5 +37,3 @@
     </tr>
   </tbody>
 </table>
-
-<!---------------------------------------------------------------------------->

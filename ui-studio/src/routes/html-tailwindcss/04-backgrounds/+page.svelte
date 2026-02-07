@@ -1,9 +1,11 @@
+<script lang="ts">
+  import favicon from "$lib/svg/svelte_logo.svg";
+  import "$lib/css/default.css"
+</script>
+
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
 
-<script lang="ts">
-  import favicon from "$lib/assets/svelte_logo.svg";
-  import "./page.css";
-</script>
+<!---------------------------------------------------------------------------->
 
 <style>
   /* 
@@ -13,7 +15,7 @@
     Without this line you will get an error if you try to use
     `@apply`
   */
-  @reference "./page.css";
+  @reference "$lib/css/default.css";
 
   .info-text {
     /* 
